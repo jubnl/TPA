@@ -10,55 +10,112 @@
 \usepackage{lipsum}
 \renewcommand{\thesection}{\arabic{section}}
 \usepackage{ulem}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Quel est l'impact du TDAH chez un adulte dans le monde du travail?},
+    pdfpagemode=FullScreen,
+    }
 \usepackage{geometry}
+\usepackage{titlesec}
+\setcounter{secnumdepth}{4}
 \geometry{hmargin=2.5cm,vmargin=3.5cm}
-
-%%exemple titre : Un semestre à cracovie:
-%% Entre orient et occident
-%%De l'autre coté du rideau de fer
-%%Associé à l'Est, veut se rapprocher de l'Ouest
 
 
 \begin{document}
 
 \begin{title}
 
+\author{Julien Gunther - INFO 4E}
 \title{
-    {\Huge Titre du devoir}\\
+    {\Huge TDAH au travail}\\
     \vspace{1 cm}
-    {\LARGE Nom de l'élève Promo 20**}\\
-    \vspace{2.5 cm}
-    {\includegraphics{logo_efrei}}\\
-    \vspace{2.5 cm}
-    {\Large Nom du prof, matière/département}\\
+%    {\LARGE Julien Gunther - INFO4E}\\
+    \vspace{3 cm}
+    {\Large Quel est l'impact du TDAH dans le monde du travail ?}\\
     \vspace{1 cm}
-    {\date{\Large Date du rendu}}}
+    {\date{\Large \today}}}
 \end{title}
-
+\pagenumbering{arabic}
 \maketitle
+\clearpage
+
 \tableofcontents
 \clearpage
 
+\section{Préface}
+\input{chapters/preface}
+\clearpage
 
-\pagenumbering{arabic}
+
 
 \section{Introduction}
-\input{chapters/introduction}
+\input{chapters/introduction/introduction}
+\subsection{Type actif}
+\input{chapters/introduction/type1}
+\subsection{Type passif}
+\input{chapters/introduction/type2}
+\subsection{Symptômes}
+\input{chapters/introduction/symptomes}
+\subsubsection{Impact sur l'organisation}
+\input{chapters/introduction/organisation}
+\subsubsection{Travailler sous pression}
+\input{chapters/introduction/pression}
+\subsection{Manifestation des symptômes l'école}
+\input{chapters/introduction/a-l-ecole}
+\subsection{Manifestation des symptômes au travail}
+\input{chapters/introduction/au-travail}
+\clearpage
 
-\section{Développement}
-\input{chapters/developpement/developpement}
+\section{Potentielles solutions}
+\input{chapters/solutions/intro}
+\subsection{Bruit ambiant}
+\input{chapters/solutions/bruit}
+\subsection{La musique}
+\input{chapters/solutions/musique}
+\subsection{La médication}
+\input{chapters/solutions/medication/intro}
+\subsubsection{Médicaments actifs}
+\input{chapters/solutions/medication/amph}
+\subsubsection{Médicaments passifs}
+\input{chapters/solutions/medication/passif}
+\clearpage
 
-\subsection{Partie 1}
-\input{chapters/developpement/part1}
-
-\subsection{Partie 2}
-\input{chapters/developpement/part2}
-
-\subsection{Partie 3}
-\input{chapters/developpement/part3}
+\section{Dans le monde du travail}
+\input{chapters/taff/intro}
+\subsection{Les plus grandes forces}
+\input{chapters/taff/force/force}
+\subsection{Les plus grandes faiblesses}
+\input{chapters/taff/force/faiblesse}
+\subsection{En parler à son employeur, une bonne idée ?}
+\input{chapters/taff/parler-a-l-employeur}
+\subsection{Et en parler à ses collègues ?}
+\input{chapters/taff/parler-aux-collegues}
+\clearpage
 
 \section{Conclusion}
 \input{chapters/conclusion}
+\clearpage
+
+\section{Références}
+
+\subsection{Glossaire}
+\input{chapters/references/glossaire}
+
+\subsection{Référents}
+\input{chapters/references/referents}
+
+\subsection{Bibliographie}
+\input{chapters/references/bibliographie}
+
+\subsection{Webographie}
+\input{chapters/references/webographie}
+
+\subsection{Iconographie}
+\input{chapters/references/iconographie}
 
 
 \end{document}
